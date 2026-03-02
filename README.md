@@ -1,48 +1,66 @@
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,50:0a3d6b,100:004e92&height=240&section=header&text=Chinedu%20Kingsley%20Okereke&fontSize=42&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=Full-Stack%20Engineer%20•%20AI%20Systems%20Builder%20•%20Infrastructure-Minded&descSize=16&descAlignY=58&descColor=90caf9" />
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,50:0a3d6b,100:004e92&height=240&section=header&text=Chinedu%20Kingsley%20Okereke&fontSize=42&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=Full-Stack%20Engineer%20%20%E2%80%A2%20%20AI%20Systems%20Architect%20%20%E2%80%A2%20%20Infrastructure-Minded%20Builder&descSize=16&descAlignY=58&descColor=90caf9" alt="header" />
 </p>
 
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=19&duration=3000&pause=900&color=58A6FF&center=true&vCenter=true&width=780&lines=Building+production-grade+web+applications;Designing+AI-integrated+systems+%26+automation;Architecting+scalable+cloud+infrastructure;Next.js+%7C+TypeScript+%7C+NestJS+%7C+PostgreSQL+%7C+Linux" />
+  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=19&duration=3000&pause=900&color=58A6FF&center=true&vCenter=true&width=780&lines=Building+production-grade+web+applications;Designing+AI-powered+systems+%26+automation;Architecting+scalable+cloud+infrastructure;Next.js+%7C+TypeScript+%7C+NestJS+%7C+PostgreSQL+%7C+Linux;Open+for+Freelance+%26+Long-term+Engagements" alt="Typing SVG" />
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/🟢%20Available%20for%20Projects-0d1117?style=for-the-badge&color=2ea043" />
+  <img src="https://img.shields.io/badge/%F0%9F%9F%A2%20Available%20for%20Projects-0d1117?style=for-the-badge&color=2ea043" />
    
-  <img src="https://img.shields.io/badge/📍%20Lagos,%20Nigeria-0d1117?style=for-the-badge&color=1c1c2e" />
+  <img src="https://img.shields.io/badge/%F0%9F%93%8D%20Lagos%2C%20Nigeria-0d1117?style=for-the-badge&color=1c1c2e" />
    
   <img src="https://komarev.com/ghpvc/?username=Masterchinedum&style=for-the-badge&color=0e75b6&label=Profile+Views" />
 </p>
+
+<br/>
 
 ---
 
 ## ⚡ Who I Am
 
-I'm a **systems-oriented Full-Stack Engineer** focused on building production-grade digital platforms.
+I am a **Full-Stack Software Engineer** focused on building scalable digital systems — from modern SaaS platforms to AI-integrated products and infrastructure-backed applications.
 
-My work spans:
+My work is defined by:
 
-- Scalable SaaS platforms
-- AI-integrated products
-- Remote collaboration systems
-- Early-talent & workforce platforms
-- Cloud-deployed infrastructure
+- Engineering precision
+- Clean system architecture
+- Performance at scale
+- Business-aligned technical execution
 
-I design systems that scale with real-world demands.
+> I design systems that scale with real-world demands.
+
+<br/>
 
 ---
 
-## 🛠 Core Capabilities
+## 🛠 What I Build
 
 <table>
-<tr>
-<td align="center" width="60">🌐</td>
-<td><strong>Web Applications & SaaS</strong><br/>Architected full-stack systems built for performance, reliability, and growth.</td>
-</tr>
+  <tr>
+    <td align="center" width="50">🌐</td>
+    <td><strong>Web Applications & SaaS Platforms</strong><br/>Full-stack platforms built from MVP to production with strong architecture and maintainability.</td>
+  </tr>
+  <tr>
+    <td align="center">🤖</td>
+    <td><strong>AI-Integrated Systems</strong><br/>LLM integrations, intelligent automation pipelines, and AI-enhanced product features.</td>
+  </tr>
+  <tr>
+    <td align="center">☁️</td>
+    <td><strong>Cloud & Infrastructure</strong><br/>Server configuration, deployment pipelines, scalable APIs, and production-grade environments.</td>
+  </tr>
+  <tr>
+    <td align="center">📊</td>
+    <td><strong>Data & Automation</strong><br/>Workflow automation, structured data systems, and performance-driven architecture design.</td>
+  </tr>
+</table>
+
+<br/>
 
 ---
 
-## 🧰 Tech Stack
+## 🧰 Tech Arsenal
 
 ### Frontend
 
@@ -50,8 +68,7 @@ I design systems that scale with real-world demands.
 ![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
 ![TailwindCSS](https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=for-the-badge&logo=tailwind-css&logoColor=white)
-
----
+![Shadcn/UI](https://img.shields.io/badge/Shadcn%2FUI-000000?style=for-the-badge)
 
 ### Backend & APIs
 
@@ -59,37 +76,48 @@ I design systems that scale with real-world demands.
 ![NestJS](https://img.shields.io/badge/NestJS-E0234E?style=for-the-badge&logo=nestjs&logoColor=white)
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white)
 ![Drizzle](https://img.shields.io/badge/Drizzle-000000?style=for-the-badge)
-
----
+![Prisma](https://img.shields.io/badge/Prisma-2D3748?style=for-the-badge&logo=prisma&logoColor=white)
+![Redis](https://img.shields.io/badge/Redis-FF4438?style=for-the-badge&logo=redis&logoColor=white)
 
 ### Cloud & Infrastructure
 
+![Google Cloud](https://img.shields.io/badge/Google_Cloud-4285F4?style=for-the-badge&logo=google-cloud&logoColor=white)
 ![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
 ![Nginx](https://img.shields.io/badge/Nginx-009639?style=for-the-badge&logo=nginx&logoColor=white)
-![Google Cloud](https://img.shields.io/badge/Google_Cloud-4285F4?style=for-the-badge&logo=google-cloud&logoColor=white)
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
-
----
 
 ### CMS & Platforms
 
 ![WordPress](https://img.shields.io/badge/WordPress-21759B?style=for-the-badge&logo=wordpress&logoColor=white)
 
-`<sub>`And other technologies selected based on product, scale, and infrastructure requirements.`</sub>`
+<br/>
+<sub>And other technologies as required by product and infrastructure demands.</sub>
+
+`<br/><br/>`
 
 ---
 
 ## 🚀 Selected Projects
 
 <table>
-<tr>
-<td width="50%" valign="top">
-<h3>🖥 Laptop Party</h3>
-<p>
-Real-time remote collaboration platform enabling seamless screen sharing and interactive sessions.
-Built with a focus on usability, performance, and production reliability.
-</p>
-</td>
+  <tr>
+    <td width="50%" valign="top">
+      <h3>🖥 Laptop Party</h3>
+      <p>
+        Real-time remote collaboration platform enabling seamless screen sharing and interactive sessions.
+        Built for performance, clarity, and production reliability.
+      </p>
+    </td>
+    <td width="50%" valign="top">
+      <h3>📊 Socialytica</h3>
+      <p>
+        Social analytics platform delivering structured performance insights for creators and digital brands.
+        Designed for clarity, growth tracking, and measurable impact.
+      </p>
+    </td>
+  </tr>
+
+<br/>
 
 ---
 
@@ -98,6 +126,8 @@ Built with a focus on usability, performance, and production reliability.
 <p align="center">
   <img src="https://raw.githubusercontent.com/Masterchinedum/Masterchinedum/output/github-contribution-grid-snake.svg" />
 </p>
+
+<br/>
 
 ---
 
@@ -113,16 +143,23 @@ Built with a focus on usability, performance, and production reliability.
   <img src="https://streak-stats.demolab.com?user=Masterchinedum&theme=github-dark-blue&hide_border=true&background=0d1117&stroke=58a6ff&ring=58a6ff&fire=ff6b35&currStreakLabel=58a6ff" />
 </p>
 
+<br/>
+
 ---
 
-## 🤝 Let's Build Something Meaningful
+## 📈 Contribution Activity
 
-I’m available for:
+<p align="center">
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=Masterchinedum&bg_color=0d1117&color=58a6ff&line=1f6feb&point=58a6ff&area=true&area_color=0a3d6b&hide_border=true&radius=8" />
+</p>
 
-• Freelance Engineering
-• Long-term Contracts
-• Technical Consulting
-• Product Architecture Advisory
+<br/>
+
+---
+
+## 🤝 Let's Build
+
+If you're building something ambitious and need strong engineering execution — let's connect.
 
 <p align="center">
   <a href="https://chinedu.net">
@@ -134,14 +171,16 @@ I’m available for:
   </a>
    
   <a href="mailto:Chinedu02k@gmail.com">
-    <img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white" />
+    <img src="https://img.shields.io/badge/Email%20Me-EA4335?style=for-the-badge&logo=gmail&logoColor=white" />
   </a>
 </p>
 
----
+<br/>
 
 <p align="center">
-  <sub><i>Build systems. Architect with clarity. Ship with precision.</i></sub>
-</p><p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,50:0a3d6b,100:004e92&height=240&section=header&text=Chinedu%20Kingsley%20Okereke&fontSize=42&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=Full-Stack%20Engineer%20%20%E2%80%A2%20%20AI%20Systems%20Builder%20%20%E2%80%A2%20%20Trading%20Infrastructure&descSize=16&descAlignY=58&descColor=90caf9" alt="header" />
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:004e92,50:0a3d6b,100:0d1117&height=120&section=footer" />
+</p>
+
+<p align="center">
+  <sub><i>"Build systems. Engineer intelligently. Ship relentlessly."</i></sub>
 </p>
