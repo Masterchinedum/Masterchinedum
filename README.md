@@ -156,14 +156,10 @@ Whether you're a **founder** with a product to build, a **startup** that needs t
 
 ---
 
-## 🐍 Contribution Graph
+## � Contribution Activity
 
 <p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Masterchinedum/Masterchinedum/output/github-contribution-grid-snake-dark.svg" />
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Masterchinedum/Masterchinedum/output/github-contribution-grid-snake.svg" />
-    <img src="https://raw.githubusercontent.com/Masterchinedum/Masterchinedum/output/github-contribution-grid-snake.svg" alt="GitHub contribution snake animation" />
-  </picture>
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=Masterchinedum&bg_color=0d1117&color=58a6ff&line=1f6feb&point=58a6ff&area=true&area_color=0a3d6b&hide_border=true&radius=8" alt="Contribution Activity Graph" />
 </p>
 
 <br/>
