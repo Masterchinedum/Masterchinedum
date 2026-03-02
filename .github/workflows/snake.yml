@@ -1,4 +1,4 @@
-name: Generate 3D Contribution Calendar
+name: Generate Profile Assets
 
 on:
   schedule:
@@ -12,7 +12,7 @@ permissions:
   contents: write
 
 jobs:
-  generate:
+  generate-3d-calendar:
     runs-on: ubuntu-latest
     timeout-minutes: 15
     steps:
@@ -32,4 +32,28 @@ jobs:
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git add -A profile-3d-contrib/
           git diff --cached --quiet || git commit -m "chore: regenerate 3D contribution calendar [skip ci]"
+          git push
+
+  generate-stats-cards:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Generate profile summary cards
+        uses: vn7n24fzkq/github-profile-summary-cards@release
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          USERNAME: Masterchinedum
+          BRANCH_NAME: main
+
+      - name: Commit and push stats cards
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git pull --rebase origin main
+          git add -A profile-summary-card-output/
+          git diff --cached --quiet || git commit -m "chore: regenerate profile summary cards [skip ci]"
           git push

@@ -135,12 +135,15 @@ My work is defined by:
 ## 📊 GitHub Analytics
 
 <p align="center">
-  <img height="175" src="https://github-readme-stats.vercel.app/api?username=Masterchinedum&show_icons=true&theme=github_dark&hide_border=true&count_private=true&bg_color=0d1117&title_color=58a6ff&icon_color=58a6ff&text_color=c9d1d9" />
-   
-  <img height="175" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Masterchinedum&layout=compact&theme=github_dark&hide_border=true&bg_color=0d1117&title_color=58a6ff&text_color=c9d1d9" />
+  <img src="./profile-summary-card-output/tokyonight/0-profile-details.svg" alt="Profile Details" />
 </p>
-
 <p align="center">
+  <img src="./profile-summary-card-output/tokyonight/1-repos-per-language.svg" alt="Repos Per Language" />
+  <img src="./profile-summary-card-output/tokyonight/2-most-commit-language.svg" alt="Most Commit Language" />
+</p>
+<p align="center">
+  <img src="./profile-summary-card-output/tokyonight/3-stats.svg" alt="Stats" />
+  <img src="./profile-summary-card-output/tokyonight/4-productive-time.svg" alt="Productive Time" />
   <img src="https://streak-stats.demolab.com?user=Masterchinedum&theme=github-dark-blue&hide_border=true&background=0d1117&stroke=58a6ff&ring=58a6ff&fire=ff6b35&currStreakLabel=58a6ff" />
 </p>
 
