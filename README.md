@@ -93,7 +93,7 @@ My work is defined by:
 <br/>
 <sub>And other technologies as required by product and infrastructure demands.</sub>
 
-`<br/><br/>`
+<br/>
 
 ---
 
