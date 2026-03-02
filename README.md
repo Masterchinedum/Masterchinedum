@@ -82,10 +82,8 @@ Scalable marketplace architecture built with Next.js.
 # 🐍 Contribution Snake
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/Masterchinedum/Masterchinedum/output/github-contribution-grid-snake.svg" />
+  <img src="https://raw.githubusercontent.com/Masterchinedum/Masterchinedum/output/github-contribution-grid-snake.svg" alt="snake animation" />
 </p>
-
-*(To activate the snake animation, you'll need to set up a GitHub Action. I can guide you if you want.)*
 
 ---
 
