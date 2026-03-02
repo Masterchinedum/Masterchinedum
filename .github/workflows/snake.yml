@@ -37,9 +37,12 @@ jobs:
   generate-stats-cards:
     runs-on: ubuntu-latest
     timeout-minutes: 15
+    needs: generate-3d-calendar
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          ref: main
 
       - name: Generate profile summary cards
         uses: vn7n24fzkq/github-profile-summary-cards@release
@@ -48,12 +51,3 @@ jobs:
         with:
           USERNAME: Masterchinedum
           BRANCH_NAME: main
-
-      - name: Commit and push stats cards
-        run: |
-          git config --global user.name "github-actions[bot]"
-          git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git pull --rebase origin main
-          git add -A profile-summary-card-output/
-          git diff --cached --quiet || git commit -m "chore: regenerate profile summary cards [skip ci]"
-          git push
