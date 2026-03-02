@@ -116,15 +116,16 @@ My work is defined by:
       </p>
     </td>
   </tr>
+</table>
 
 <br/>
 
 ---
 
-## 🏆 GitHub Trophies
+## 🗺 3D Contribution Calendar
 
 <p align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=Masterchinedum&theme=onestar&no-frame=true&no-bg=true&column=7&margin-w=8" alt="GitHub Trophies" />
+  <img src="./profile-3d-contrib/profile-season-animate.svg" alt="3D Contribution Calendar" />
 </p>
 
 <br/>
