@@ -110,8 +110,7 @@ My work is defined by:
     </td>
     <td width="50%" valign="top">
       <h3>📊 Socialytica</h3>
-      <p>
-        Copilot said: Socialytica helps people understand the health, dynamics, Socialytica helps people understand the health, dynamics, and compatibility of romantic and interpersonal relationships by interpreting established psychological tests and patterns. Its real intention is to provide personalized, actionable insights and guidance that increase self-awareness, resolve conflicts, reduce toxicity, and empower users to make better relationship decisions.
+      <p> Socialytica helps people understand the health, dynamics, Socialytica helps people understand the health, dynamics, and compatibility of romantic and interpersonal relationships by interpreting established psychological tests and patterns.
       </p>
     </td>
   </tr>
