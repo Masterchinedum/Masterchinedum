@@ -121,10 +121,10 @@ My work is defined by:
 
 ---
 
-## 🐍 Contribution Animation
+## 🏆 GitHub Trophies
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/Masterchinedum/Masterchinedum/output/github-contribution-grid-snake.svg" />
+  <img src="https://github-profile-trophy.vercel.app/?username=Masterchinedum&theme=onestar&no-frame=true&no-bg=true&column=7&margin-w=8" alt="GitHub Trophies" />
 </p>
 
 <br/>
