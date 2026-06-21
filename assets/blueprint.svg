@@ -1,0 +1,175 @@
+<svg viewBox="0 0 1000 470" width="1000" height="470" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" role="img" aria-label="Chinedu Kingsley Okereke — system architecture blueprint">
+  <defs>
+    <linearGradient id="bp-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0a0b0d"/>
+      <stop offset="0.6" stop-color="#0c0d10"/>
+      <stop offset="1" stop-color="#070809"/>
+    </linearGradient>
+
+    <pattern id="bp-grid" width="25" height="25" patternUnits="userSpaceOnUse">
+      <path d="M25 0H0V25" fill="none" stroke="#ffffff" stroke-opacity="0.035" stroke-width="1"/>
+    </pattern>
+    <pattern id="bp-grid-major" width="100" height="100" patternUnits="userSpaceOnUse">
+      <path d="M100 0H0V100" fill="none" stroke="#ffffff" stroke-opacity="0.06" stroke-width="1"/>
+    </pattern>
+
+    <filter id="bp-glow" x="-300%" y="-300%" width="700%" height="700%">
+      <feGaussianBlur stdDeviation="2.2" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+
+    <!-- invisible motion paths: core -> bus -> each domain -->
+    <path id="bp-w1" d="M500 116 V182 H176 V224"/>
+    <path id="bp-w2" d="M500 116 V182 H392 V224"/>
+    <path id="bp-w3" d="M500 116 V182 H608 V224"/>
+    <path id="bp-w4" d="M500 116 V182 H824 V224"/>
+
+    <style>
+      @keyframes bp-draw  { to { stroke-dashoffset: 0; } }
+      @keyframes bp-in    { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: translateY(0); } }
+      @keyframes bp-blink { 0%, 55% { opacity: 1; } 55.01%, 100% { opacity: 0.18; } }
+
+      .bp-wire  { stroke-dasharray: 1; stroke-dashoffset: 1; animation: bp-draw 1.3s cubic-bezier(.4,0,.2,1) forwards; }
+      .bp-d1 { animation-delay: 0.25s; } .bp-d2 { animation-delay: 0.45s; }
+      .bp-d3 { animation-delay: 0.65s; } .bp-d4 { animation-delay: 0.85s; }
+
+      .bp-node  { opacity: 0; animation: bp-in 0.7s ease-out forwards; }
+      .bp-n1 { animation-delay: 1.05s; } .bp-n2 { animation-delay: 1.2s; }
+      .bp-n3 { animation-delay: 1.35s; } .bp-n4 { animation-delay: 1.5s; }
+      .bp-core  { opacity: 0; animation: bp-in 0.8s 0.1s ease-out forwards; }
+      .bp-meta  { opacity: 0; animation: bp-in 0.9s 1.7s ease-out forwards; }
+      .bp-led   { animation: bp-blink 1.6s steps(1) infinite; }
+
+      .bp-name  { font-family: 'JetBrains Mono','SF Mono',ui-monospace,Menlo,Consolas,monospace; font-weight: 600; }
+      .bp-mono  { font-family: 'JetBrains Mono','SF Mono',ui-monospace,Menlo,Consolas,monospace; }
+    </style>
+  </defs>
+
+  <!-- backdrop -->
+  <rect width="1000" height="470" fill="url(#bp-bg)"/>
+  <rect width="1000" height="470" fill="url(#bp-grid)"/>
+  <rect width="1000" height="470" fill="url(#bp-grid-major)"/>
+
+  <!-- drawing frame + registration marks -->
+  <rect x="24" y="24" width="952" height="422" fill="none" stroke="#ffffff" stroke-opacity="0.08"/>
+  <g stroke="#8b949e" stroke-opacity="0.5" stroke-width="1">
+    <path d="M24 44 H44 M44 24 V44"/>
+    <path d="M976 44 H956 M956 24 V44"/>
+    <path d="M24 426 H44 M44 446 V426"/>
+    <path d="M976 426 H956 M956 446 V426"/>
+  </g>
+  <g fill="#6e7681" class="bp-mono" font-size="9" letter-spacing="2">
+    <text x="40" y="40">A</text><text x="956" y="40">B</text>
+    <text x="40" y="440">C</text><text x="952" y="440">D</text>
+  </g>
+
+  <!-- ============ WIRES (draw-in) ============ -->
+  <g stroke="#586069" stroke-width="1.4" fill="none" stroke-linecap="round">
+    <path class="bp-wire bp-d1" pathLength="1" d="M500 116 V182"/>
+    <path class="bp-wire bp-d1" pathLength="1" d="M176 182 H824"/>
+    <path class="bp-wire bp-d2" pathLength="1" d="M176 182 V224"/>
+    <path class="bp-wire bp-d2" pathLength="1" d="M392 182 V224"/>
+    <path class="bp-wire bp-d3" pathLength="1" d="M608 182 V224"/>
+    <path class="bp-wire bp-d3" pathLength="1" d="M824 182 V224"/>
+    <!-- ground rail + stubs -->
+    <path class="bp-wire bp-d4" pathLength="1" d="M150 332 H850"/>
+    <path class="bp-wire bp-d4" pathLength="1" d="M176 302 V332"/>
+    <path class="bp-wire bp-d4" pathLength="1" d="M392 302 V332"/>
+    <path class="bp-wire bp-d4" pathLength="1" d="M608 302 V332"/>
+    <path class="bp-wire bp-d4" pathLength="1" d="M824 302 V332"/>
+  </g>
+
+  <!-- junction ports -->
+  <g fill="#0a0b0d" stroke="#8b949e" stroke-width="1.2">
+    <circle cx="500" cy="182" r="3.5"/>
+    <circle cx="176" cy="182" r="3"/><circle cx="392" cy="182" r="3"/>
+    <circle cx="608" cy="182" r="3"/><circle cx="824" cy="182" r="3"/>
+  </g>
+  <g fill="#586069">
+    <rect x="172.5" y="328.5" width="7" height="7"/><rect x="388.5" y="328.5" width="7" height="7"/>
+    <rect x="604.5" y="328.5" width="7" height="7"/><rect x="820.5" y="328.5" width="7" height="7"/>
+  </g>
+
+  <!-- ============ SIGNAL PULSES ============ -->
+  <g fill="#f0f3f6" filter="url(#bp-glow)">
+    <circle r="2.6"><animateMotion dur="2.3s" begin="1.5s"  repeatCount="indefinite"><mpath xlink:href="#bp-w1"/></animateMotion></circle>
+    <circle r="2.6"><animateMotion dur="2.3s" begin="2.65s" repeatCount="indefinite"><mpath xlink:href="#bp-w1"/></animateMotion></circle>
+    <circle r="2.6"><animateMotion dur="2.3s" begin="1.8s"  repeatCount="indefinite"><mpath xlink:href="#bp-w2"/></animateMotion></circle>
+    <circle r="2.6"><animateMotion dur="2.3s" begin="2.95s" repeatCount="indefinite"><mpath xlink:href="#bp-w2"/></animateMotion></circle>
+    <circle r="2.6"><animateMotion dur="2.3s" begin="2.1s"  repeatCount="indefinite"><mpath xlink:href="#bp-w3"/></animateMotion></circle>
+    <circle r="2.6"><animateMotion dur="2.3s" begin="3.25s" repeatCount="indefinite"><mpath xlink:href="#bp-w3"/></animateMotion></circle>
+    <circle r="2.6"><animateMotion dur="2.3s" begin="2.4s"  repeatCount="indefinite"><mpath xlink:href="#bp-w4"/></animateMotion></circle>
+    <circle r="2.6"><animateMotion dur="2.3s" begin="3.55s" repeatCount="indefinite"><mpath xlink:href="#bp-w4"/></animateMotion></circle>
+  </g>
+
+  <!-- ============ CORE NODE ============ -->
+  <g class="bp-core">
+    <rect x="350" y="46" width="300" height="70" rx="6" fill="#0d0e11" stroke="#c9d1d9" stroke-width="1.4"/>
+    <rect x="356" y="52" width="288" height="58" rx="3" fill="none" stroke="#ffffff" stroke-opacity="0.12"/>
+    <circle class="bp-led" cx="368" cy="62" r="3" fill="#e6edf3"/>
+    <text class="bp-mono" x="640" y="64" text-anchor="end" font-size="8" letter-spacing="2" fill="#6e7681">CORE</text>
+    <text class="bp-name" x="500" y="80" text-anchor="middle" font-size="14" letter-spacing="1.5" fill="#e6edf3">CHINEDU KINGSLEY OKEREKE</text>
+    <text class="bp-mono" x="500" y="98" text-anchor="middle" font-size="9.5" letter-spacing="3" fill="#8b949e">FULL-STACK ENGINEER &#183; AI &#183; INFRA</text>
+  </g>
+
+  <!-- ============ DOMAIN NODES ============ -->
+  <!-- 1: WEB -->
+  <g class="bp-node bp-n1">
+    <rect x="89" y="224" width="174" height="78" rx="5" fill="#0c0d10" stroke="#8b949e" stroke-width="1.2"/>
+    <text class="bp-mono" x="176" y="246" text-anchor="middle" font-size="8" letter-spacing="2" fill="#6e7681">01 &#183; INTERFACE</text>
+    <text class="bp-name" x="176" y="264" text-anchor="middle" font-size="12" letter-spacing="1" fill="#e6edf3">WEB &amp; SAAS</text>
+    <line x1="116" y1="274" x2="236" y2="274" stroke="#ffffff" stroke-opacity="0.1"/>
+    <text class="bp-mono" x="176" y="288" text-anchor="middle" font-size="9" fill="#8b949e">next &#183; react &#183; ts</text>
+    <text class="bp-mono" x="176" y="299" text-anchor="middle" font-size="9" fill="#6e7681">tailwind &#183; shadcn</text>
+  </g>
+  <!-- 2: AI -->
+  <g class="bp-node bp-n2">
+    <rect x="305" y="224" width="174" height="78" rx="5" fill="#0c0d10" stroke="#8b949e" stroke-width="1.2"/>
+    <text class="bp-mono" x="392" y="246" text-anchor="middle" font-size="8" letter-spacing="2" fill="#6e7681">02 &#183; INTELLIGENCE</text>
+    <text class="bp-name" x="392" y="264" text-anchor="middle" font-size="12" letter-spacing="1" fill="#e6edf3">AI &amp; LLM</text>
+    <line x1="332" y1="274" x2="452" y2="274" stroke="#ffffff" stroke-opacity="0.1"/>
+    <text class="bp-mono" x="392" y="288" text-anchor="middle" font-size="9" fill="#8b949e">llm integrations</text>
+    <text class="bp-mono" x="392" y="299" text-anchor="middle" font-size="9" fill="#6e7681">automation pipelines</text>
+  </g>
+  <!-- 3: CLOUD -->
+  <g class="bp-node bp-n3">
+    <rect x="521" y="224" width="174" height="78" rx="5" fill="#0c0d10" stroke="#8b949e" stroke-width="1.2"/>
+    <text class="bp-mono" x="608" y="246" text-anchor="middle" font-size="8" letter-spacing="2" fill="#6e7681">03 &#183; RUNTIME</text>
+    <text class="bp-name" x="608" y="264" text-anchor="middle" font-size="12" letter-spacing="1" fill="#e6edf3">CLOUD &amp; INFRA</text>
+    <line x1="548" y1="274" x2="668" y2="274" stroke="#ffffff" stroke-opacity="0.1"/>
+    <text class="bp-mono" x="608" y="288" text-anchor="middle" font-size="9" fill="#8b949e">gcp &#183; docker</text>
+    <text class="bp-mono" x="608" y="299" text-anchor="middle" font-size="9" fill="#6e7681">linux &#183; nginx</text>
+  </g>
+  <!-- 4: DATA -->
+  <g class="bp-node bp-n4">
+    <rect x="737" y="224" width="174" height="78" rx="5" fill="#0c0d10" stroke="#8b949e" stroke-width="1.2"/>
+    <text class="bp-mono" x="824" y="246" text-anchor="middle" font-size="8" letter-spacing="2" fill="#6e7681">04 &#183; PERSISTENCE</text>
+    <text class="bp-name" x="824" y="264" text-anchor="middle" font-size="12" letter-spacing="1" fill="#e6edf3">DATA &amp; OPS</text>
+    <line x1="764" y1="274" x2="884" y2="274" stroke="#ffffff" stroke-opacity="0.1"/>
+    <text class="bp-mono" x="824" y="288" text-anchor="middle" font-size="9" fill="#8b949e">postgres &#183; redis</text>
+    <text class="bp-mono" x="824" y="299" text-anchor="middle" font-size="9" fill="#6e7681">drizzle &#183; prisma</text>
+  </g>
+
+  <!-- ============ DIMENSION LINE (bottom-left) ============ -->
+  <g class="bp-meta" stroke="#6e7681" stroke-width="1">
+    <path d="M150 348 V360 M850 348 V360" stroke-opacity="0.7"/>
+    <path d="M150 354 H850" stroke-opacity="0.5"/>
+    <path d="M150 354 l8 -3 v6 z M850 354 l-8 -3 v6 z" fill="#6e7681" stroke="none"/>
+  </g>
+  <text class="bp-mono bp-meta" x="500" y="350" text-anchor="middle" font-size="9" letter-spacing="3" fill="#8b949e">SYSTEMS ENGINEERED TO SCALE</text>
+
+  <!-- ============ TITLE BLOCK (bottom-right) ============ -->
+  <g class="bp-meta">
+    <rect x="672" y="372" width="262" height="58" fill="#0c0d10" stroke="#30363d" stroke-width="1"/>
+    <line x1="672" y1="394" x2="934" y2="394" stroke="#30363d"/>
+    <line x1="672" y1="412" x2="934" y2="412" stroke="#30363d"/>
+    <line x1="810" y1="412" x2="810" y2="430" stroke="#30363d"/>
+    <text class="bp-mono" x="684" y="388" font-size="10" letter-spacing="1.5" fill="#c9d1d9">CHINEDU KINGSLEY OKEREKE</text>
+    <text class="bp-mono" x="684" y="407" font-size="8.5" letter-spacing="1" fill="#8b949e">DWG. SYSTEM&#8211;PROFILE &#183; REV 2026</text>
+    <text class="bp-mono" x="684" y="425" font-size="8.5" letter-spacing="1" fill="#8b949e">SOFTWARE ENGINEER</text>
+    <text class="bp-mono" x="822" y="425" font-size="8.5" letter-spacing="1" fill="#8b949e">SCALE 1:1</text>
+  </g>
+
+  <!-- title-block annotation (bottom-left corner) -->
+  <text class="bp-mono bp-meta" x="40" y="425" font-size="8.5" letter-spacing="2" fill="#6e7681">// LAGOS, NG &#183; AVAILABLE FOR ENGAGEMENTS</text>
+</svg>
