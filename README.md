@@ -70,29 +70,10 @@ I treat software like infrastructure: every system is designed for **precision**
 
 ---
 
-## §03 · DEPLOYMENTS
-
-| Instance | Description | Status |
-| :-- | :-- | :-- |
-| **Laptop Party** | Real-time remote collaboration platform — seamless screen sharing and interactive sessions, built for performance, clarity, and production reliability. | `● live` |
-| **Socialytica** | Helps people understand the health, dynamics, and compatibility of romantic and interpersonal relationships by interpreting established psychological tests and patterns. | `● live` |
-
-<br/>
-
----
-
-## §04 · TELEMETRY
+## §03 · TELEMETRY
 
 <p align="center">
   <img src="./profile-3d-contrib/profile-night-green.svg" alt="3D contribution calendar" width="100%" />
-</p>
-
-<p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Masterchinedum/Masterchinedum/output/github-contribution-grid-snake-dark.svg" />
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Masterchinedum/Masterchinedum/output/github-contribution-grid-snake.svg" />
-    <img alt="Snake traversing the contribution graph" src="https://raw.githubusercontent.com/Masterchinedum/Masterchinedum/output/github-contribution-grid-snake-dark.svg" width="100%" />
-  </picture>
 </p>
 
 <p align="center">
@@ -117,7 +98,7 @@ I treat software like infrastructure: every system is designed for **precision**
 
 ---
 
-## §05 · INTERFACES
+## §04 · INTERFACES
 
 ```
 $ connect --to chinedu --for "ambitious engineering execution"
